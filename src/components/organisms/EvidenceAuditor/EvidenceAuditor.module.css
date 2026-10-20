@@ -1,0 +1,15 @@
+.topbar { display: flex; justify-content: space-between; align-items: center; min-height: 4.2rem; padding: 0 var(--page-gutter); border-bottom: 1px solid var(--line); background: color-mix(in srgb, var(--paper) 94%, transparent); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 20; }
+.brand { display: flex; align-items: center; gap: 0.75rem; color: inherit; text-decoration: none; }
+.brand > span { display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%; background: var(--ink); color: var(--paper); font-family: var(--font-serif); font-size: 0.72rem; }
+.brand strong { font-family: var(--font-serif); font-size: 1rem; font-weight: 600; }
+.health { display: flex; align-items: center; gap: 0.5rem; color: var(--muted); font-family: var(--font-mono); font-size: 0.64rem; }
+.dot { width: 0.5rem; height: 0.5rem; border-radius: 50%; background: var(--warning); }
+.dot.ok { background: var(--success); }
+.dot.reindexrequired, .dot.unavailable { background: var(--accent); }
+.contextBar { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 2rem; padding: 0.8rem var(--page-gutter); border-bottom: 1px solid var(--line); color: var(--muted); font-size: 0.68rem; animation: barIn 420ms ease; }
+.contextBar p { margin: 0; text-align: center; }
+.contextBar span { font-family: var(--font-mono); }
+.footer { display: flex; justify-content: space-between; gap: 2rem; padding: 1.5rem var(--page-gutter); background: var(--ink); color: #aaa69c; border-top: 1px solid #3b3a36; font-size: 0.7rem; }
+.footer strong { color: var(--paper); font-family: var(--font-serif); }
+@keyframes barIn { from { opacity: 0; transform: translateY(-6px); } }
+@media (max-width: 700px) { .contextBar { grid-template-columns: 1fr auto; } .contextBar p { grid-column: 1 / -1; grid-row: 2; text-align: left; } .health span:last-child { display: none; } .footer { flex-direction: column; gap: 0.5rem; } }

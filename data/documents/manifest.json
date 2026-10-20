@@ -1,0 +1,12 @@
+[
+  {"documentId":"reimbursement-2024","policyKey":"reimbursement-policy","title":"Política de Reembolso 2024","version":"2024.1","effectiveFrom":"2024-01-01","status":"superseded","file":"reimbursement-2024.md"},
+  {"documentId":"reimbursement-2025","policyKey":"reimbursement-policy","title":"Política de Reembolso 2025","version":"2025.1","effectiveFrom":"2025-01-01","status":"superseded","file":"reimbursement-2025.md"},
+  {"documentId":"reimbursement-2026","policyKey":"reimbursement-policy","title":"Política de Reembolso 2026","version":"2026.1","effectiveFrom":"2026-01-01","status":"active","file":"reimbursement-2026.md"},
+  {"documentId":"eligible-expenses-2026","policyKey":"eligible-expenses","title":"Manual de Despesas Elegíveis","version":"2026.1","effectiveFrom":"2026-01-01","status":"active","file":"eligible-expenses-2026.md"},
+  {"documentId":"corporate-travel-2025","policyKey":"corporate-travel","title":"Procedimento de Viagens Corporativas","version":"2025.2","effectiveFrom":"2025-06-01","status":"active","file":"corporate-travel-2025.md"},
+  {"documentId":"cash-advance-2025","policyKey":"cash-advance","title":"Procedimento de Adiantamentos","version":"2025.1","effectiveFrom":"2025-03-01","status":"active","file":"cash-advance-2025.md"},
+  {"documentId":"corporate-card-2026","policyKey":"corporate-card","title":"Política de Cartão Corporativo","version":"2026.1","effectiveFrom":"2026-02-01","status":"active","file":"corporate-card-2026.md"},
+  {"documentId":"remote-work-2026","policyKey":"remote-work","title":"Política de Trabalho Remoto","version":"2026.1","effectiveFrom":"2026-01-15","status":"active","file":"remote-work-2026.md"},
+  {"documentId":"meal-allowance-draft","policyKey":"meal-allowance","title":"Proposta de Auxílio-Alimentação","version":"2027-draft","effectiveFrom":null,"status":"unknown","file":"meal-allowance-draft.md"},
+  {"documentId":"security-handbook-injection","policyKey":"security-handbook","title":"Manual de Segurança da Informação","version":"2026.1","effectiveFrom":"2026-01-01","status":"active","file":"security-handbook-injection.md"}
+]

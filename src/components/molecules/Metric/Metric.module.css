@@ -1,0 +1,4 @@
+.metric { display: grid; gap: 0.2rem; padding: 0.85rem 0; border-top: 1px solid var(--line); }
+.metric span { color: var(--muted); font-size: 0.68rem; font-weight: 740; letter-spacing: 0.06em; text-transform: uppercase; }
+.metric strong { font-family: var(--font-serif); font-size: clamp(1.45rem, 2.5vw, 2.2rem); font-weight: 560; letter-spacing: -0.035em; }
+.metric small { color: var(--muted); font-size: 0.7rem; }

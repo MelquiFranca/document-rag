@@ -1,0 +1,20 @@
+.group {
+  display: inline-flex;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.2rem;
+  margin: 0;
+}
+.option { cursor: pointer; }
+.option input { position: absolute; opacity: 0; pointer-events: none; }
+.option span {
+  display: block;
+  padding: 0.48rem 0.78rem;
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 720;
+  transition: background 160ms ease, color 160ms ease;
+}
+.option input:checked + span { background: var(--ink); color: var(--paper); }
+.option input:focus-visible + span { outline: 3px solid color-mix(in srgb, var(--accent) 40%, transparent); }

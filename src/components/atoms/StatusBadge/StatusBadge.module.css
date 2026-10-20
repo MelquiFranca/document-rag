@@ -1,0 +1,19 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  min-height: 1.55rem;
+  border-radius: 999px;
+  padding: 0.25rem 0.55rem;
+  font-size: 0.68rem;
+  line-height: 1;
+  font-weight: 780;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+  background: var(--paper-deep);
+  color: var(--muted);
+}
+.active, .high { background: var(--success-soft); color: var(--success); }
+.superseded { background: var(--ink-soft); color: var(--muted); }
+.draft, .medium { background: var(--warning-soft); color: var(--warning); }
+.unknown, .low { background: var(--accent-soft); color: var(--accent-dark); }

@@ -1,0 +1,23 @@
+.panel { min-width: 0; }
+.header { display: flex; justify-content: space-between; align-items: end; gap: 1rem; margin-bottom: 1.4rem; }
+.header h2 { margin: 0.3rem 0 0; font-family: var(--font-serif); font-size: 1.65rem; font-weight: 540; letter-spacing: -0.03em; }
+.upload { border-block: 1px solid var(--line-strong); padding: 1.2rem 0; margin-bottom: 1.4rem; animation: reveal 220ms ease; }
+.formGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+.formGrid label { display: grid; gap: 0.35rem; color: var(--muted); font-size: 0.7rem; font-weight: 700; }
+.formGrid input, .formGrid select { min-width: 0; border: 1px solid var(--line); border-radius: 0.45rem; background: var(--paper); color: var(--ink); padding: 0.68rem; font: inherit; font-size: 0.8rem; }
+.formGrid input:focus, .formGrid select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.wide { grid-column: 1 / -1; }
+.formFooter { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-top: 1rem; }
+.formFooter small { color: var(--muted); }
+.timeline { position: relative; display: grid; }
+.timeline::before { content: ""; position: absolute; left: 0.32rem; top: 1rem; bottom: 1rem; width: 1px; background: var(--line-strong); }
+.document { display: grid; grid-template-columns: 0.7rem 1fr; gap: 0.8rem; position: relative; width: 100%; border: 0; background: transparent; padding: 0.9rem 0; text-align: left; color: inherit; cursor: pointer; }
+.marker { z-index: 1; width: 0.65rem; height: 0.65rem; margin-top: 0.28rem; border: 2px solid var(--paper); border-radius: 50%; background: var(--line-strong); box-shadow: 0 0 0 1px var(--line-strong); transition: background 160ms, transform 160ms; }
+.document:hover .marker, .selected .marker { background: var(--accent); transform: scale(1.15); }
+.documentBody { display: grid; gap: 0.32rem; padding: 0 0.7rem 0.9rem; border-bottom: 1px solid var(--line); }
+.documentTop { display: flex; justify-content: space-between; align-items: start; gap: 0.8rem; }
+.documentTop strong { max-width: 25ch; font-size: 0.84rem; line-height: 1.35; }
+.meta, .document code { color: var(--muted); font-size: 0.68rem; }
+.selected .documentBody { color: var(--accent-dark); }
+@keyframes reveal { from { opacity: 0; transform: translateY(-5px); } }
+@media (max-width: 560px) { .formGrid { grid-template-columns: 1fr; } .wide { grid-column: auto; } .documentTop { align-items: center; } }

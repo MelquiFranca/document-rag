@@ -1,0 +1,14 @@
+.panel { padding: clamp(2rem, 5vw, 4rem) var(--page-gutter) clamp(3rem, 7vw, 6rem); background: var(--ink); color: var(--paper); }
+.panel > header { display: flex; justify-content: space-between; align-items: end; gap: 2rem; max-width: var(--max-width); margin: 0 auto 2.5rem; }
+.panel h2 { margin: 0.4rem 0 0; font-family: var(--font-serif); font-size: clamp(2rem, 4vw, 3.7rem); font-weight: 500; letter-spacing: -0.045em; }
+.panel header code { color: #bbb6ab; font-size: 0.7rem; }
+.empty, .runMeta, .comparison { max-width: var(--max-width); margin-inline: auto; }
+.empty { padding: 2rem 0; border-block: 1px solid #3b3a36; }
+.empty p { color: #aaa69c; max-width: 60ch; }
+.runMeta { display: flex; flex-wrap: wrap; gap: 0.8rem 2rem; padding: 0.8rem 0; border-block: 1px solid #3b3a36; color: #aaa69c; font-family: var(--font-mono); font-size: 0.67rem; }
+.comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(2rem, 6vw, 6rem); margin-top: 2rem; }
+.comparison article + article { border-left: 1px solid #3b3a36; padding-left: clamp(2rem, 6vw, 6rem); }
+.comparison h3 { margin: 0 0 1.2rem; color: #d6d2c8; font-size: 0.76rem; letter-spacing: 0.08em; text-transform: uppercase; }
+.metrics { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 1.5rem; }
+.metrics > div { border-color: #3b3a36; }
+@media (max-width: 760px) { .panel > header { display: grid; } .comparison { grid-template-columns: 1fr; } .comparison article + article { border-left: 0; border-top: 1px solid #3b3a36; padding: 2rem 0 0; } }

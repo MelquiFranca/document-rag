@@ -1,0 +1,38 @@
+.panel { min-width: 0; }
+.header { display: flex; align-items: start; justify-content: space-between; gap: 2rem; }
+.header h1 { max-width: 700px; margin: 0.45rem 0 0; font-family: var(--font-serif); font-size: clamp(2.35rem, 5vw, 4.8rem); font-weight: 500; line-height: 0.98; letter-spacing: -0.055em; text-wrap: balance; }
+.focal { max-width: 220px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border-bottom: 1px solid var(--line-strong); padding: 0.5rem 0; color: var(--muted); font-family: var(--font-mono); font-size: 0.68rem; }
+.composer { margin-top: clamp(2.4rem, 6vw, 5rem); border-top: 1px solid var(--ink); padding-top: 0.8rem; }
+.composer > label { color: var(--muted); font-size: 0.68rem; font-weight: 760; letter-spacing: 0.08em; text-transform: uppercase; }
+.composer textarea { display: block; width: 100%; resize: vertical; border: 0; outline: 0; background: transparent; color: var(--ink); padding: 1rem 0; font-family: var(--font-serif); font-size: clamp(1.25rem, 2.5vw, 2rem); line-height: 1.35; }
+.composer textarea:focus { box-shadow: 0 2px 0 var(--accent); }
+.actions { display: flex; align-items: center; justify-content: space-between; gap: 1rem; border-top: 1px solid var(--line); padding-top: 0.8rem; }
+.error { margin: 1.5rem 0 0; padding: 0.8rem 0; border-block: 1px solid var(--accent); color: var(--accent-dark); }
+.empty { display: grid; grid-template-columns: 3.2rem 1fr; gap: 1.2rem; align-items: start; margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--line); color: var(--muted); }
+.empty span { font-family: var(--font-mono); color: var(--accent); font-size: 0.75rem; }
+.empty p { max-width: 48ch; margin: 0; line-height: 1.6; }
+.loading { display: flex; align-items: center; gap: 1rem; margin-top: 2rem; color: var(--muted); }
+.loading span { width: 2rem; height: 2rem; border: 1px solid var(--line-strong); border-top-color: var(--accent); border-radius: 50%; animation: spin 800ms linear infinite; }
+.result { margin-top: clamp(2.5rem, 5vw, 4.5rem); animation: resultIn 360ms ease; }
+.verdict { position: relative; padding: 1.5rem 0 2.2rem 1.2rem; border-left: 3px solid var(--accent); }
+.verdictMeta { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.verdict > p { max-width: 44ch; margin: 1.2rem 0 0.7rem; font-family: var(--font-serif); font-size: clamp(1.5rem, 3.2vw, 2.6rem); line-height: 1.2; letter-spacing: -0.035em; }
+.verdict > small { color: var(--muted); line-height: 1.5; }
+.conflicts { margin-top: 1.5rem; padding: 1.3rem 0; border-block: 1px solid var(--line-strong); }
+.conflicts h3, .uncertainties h3, .sectionTitle h3 { margin: 0 0 1rem; font-size: 0.78rem; letter-spacing: 0.07em; text-transform: uppercase; }
+.conflicts > div { display: grid; grid-template-columns: minmax(70px, 0.35fr) 1fr 1.5fr; gap: 1rem; padding: 0.75rem 0; border-top: 1px solid var(--line); font-size: 0.8rem; }
+.conflicts > div strong { color: var(--accent-dark); }
+.conflicts > div span { color: var(--muted); }
+.conflicts > div p { margin: 0; }
+.uncertainties { margin-top: 1.5rem; padding: 1rem; background: var(--accent-soft); }
+.uncertainties ul { margin: 0; padding-left: 1.2rem; color: var(--accent-dark); font-size: 0.82rem; line-height: 1.6; }
+.evidence { margin-top: 2.4rem; }
+.sectionTitle { display: flex; justify-content: space-between; gap: 1rem; align-items: center; }
+.sectionTitle h3 { margin: 0; }
+.sectionTitle span, .noEvidence { color: var(--muted); font-size: 0.74rem; }
+.telemetry { display: flex; flex-wrap: wrap; gap: 0; margin-top: 2.5rem; padding-top: 0.8rem; border-top: 1px solid var(--ink); }
+.telemetry span { padding: 0.55rem 1rem 0.55rem 0; margin-right: 1rem; color: var(--muted); font-size: 0.67rem; }
+.telemetry b { color: var(--ink); font-family: var(--font-mono); font-weight: 650; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes resultIn { from { opacity: 0; transform: translateY(10px); } }
+@media (max-width: 680px) { .header { display: grid; gap: 1rem; } .focal { order: -1; } .actions { align-items: stretch; flex-direction: column; } .conflicts > div { grid-template-columns: 1fr 1fr; } .conflicts > div p { grid-column: 1 / -1; } }

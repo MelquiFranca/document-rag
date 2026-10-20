@@ -1,0 +1,1 @@
+CREATE DATABASE evidence_auditor_test;
